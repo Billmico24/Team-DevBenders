@@ -2,6 +2,7 @@
 
 ## GoIT Team "Team-DevBenders" Project SlimMom
 
+
 Bill Mico Malazarte - Team Leader - 
 
 Alexander Dinoy Jr. - Scrum-master - 
