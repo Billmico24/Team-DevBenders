@@ -1,7 +1,3 @@
 export const Footer = () => {
-  return (
-    <footer>
-      &copy; {new Date().getFullYear()} Team-DevBenders
-    </footer>
-  );
+  return <footer>&copy; {new Date().getFullYear()} Team-DevBenders</footer>;
 };
