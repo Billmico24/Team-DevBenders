@@ -30,8 +30,6 @@ transition: background var(--transition-params);
 
 `;
 
-export const Btn=styled.button` $ {
-    ButtonStylePlh
-}
-
+export const Btn = styled.button` 
+  ${ButtonStylePlh}
 `;

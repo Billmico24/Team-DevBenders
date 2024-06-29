@@ -20,7 +20,7 @@ const actionLogin = createAsyncThunk(
     try {
       const { data } = await clientAPI.login(payload);
 
-      data.data.user.avatarURL = `https://slim-mom-back.herokuapp.com/${data.data.user.avatarURL}`;
+      // data.data.user.avatarURL = ``;
 
       tokenService.setLocalTokens(data.data.tokens);
 
