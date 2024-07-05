@@ -1,0 +1,17 @@
+.navigation__item {
+  font-size: 14px;
+  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-top: 18px;
+}
+
+.default {
+  color: var(--navigation);
+}
+
+.active {
+  color: black;
+}

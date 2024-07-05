@@ -1,59 +1,35 @@
+import Modal from 'components/Modal/Modal';
+import { DailyCaloriesForm } from 'components/DailyCaloriesForm/DailyCaloriesForm';
+// import { DiaryAddProductForm } from 'components/DiaryAddProductForm/DiaryAddProductForm';
+import styles from './MainPage.module.scss';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { selectIsLoggedIn } from 'redux/authorization/authSelectors';
+import { Navigate } from 'react-router-dom';
 
-import { adviceForNoAuthUser } from 'service/axios.config';
+// import { selectUser } from 'redux/dailyCalories/caloriesSelectors';
 
-import {
-  Background,
-  DailyCaloriesForm,
-  Header,
-  Loader,
-  Modal,
-} from 'components';
-import styled from 'styled-components';
+function HomePage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const isLoggedIn = useSelector(selectIsLoggedIn);
 
-const PageGrid = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  justify-content: flex-start;
-`;
-
-export default function MainPage() {
-  const [userInfo, setUserInfo] = useState(null);
-  const [openModal, setOpenModal] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-
-  const closeModal = () => {
-    setOpenModal(false);
-    setIsLoading(false);
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
   };
-
-  const submitForm = async data => {
-    setIsLoading(true);
-    const resp = await adviceForNoAuthUser(data);
-
-    if (resp.code === 200) {
-      setUserInfo(resp.data.nutritionAdvice);
-      setOpenModal(true);
-      setIsLoading(false);
-    }
+  const onClose = () => {
+    setIsModalOpen(false);
   };
 
   return (
-    <Background>
-      <PageGrid>
-        <Header localPage="MainPage" />
-
-        <DailyCaloriesForm
-          onFormSubmit={submitForm}
-          isCleanUserInfo={true}
-          isShowNoti={false}
-        />
-        {isLoading && <Loader />}
-        {openModal && (
-          <Modal userData={userInfo} closeModalHandle={closeModal} />
-        )}
-      </PageGrid>
-    </Background>
+    <>
+      {!isLoggedIn && (
+        <div className={styles.homePage}>
+          <DailyCaloriesForm handleModalOpen={handleModalOpen} />
+          {isModalOpen && <Modal onClose={onClose} isModalOpen={isModalOpen}/>}
+        </div>
+      )}
+      {isLoggedIn && <Navigate to="/diary" />}
+    </>
   );
 }
+export default HomePage;

@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arimo', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--body);
+}
+
+input {
+  background: transparent;
+}
+
+.MuiDateCalendar-root {
+  background-color: var(--muiDateCalendar);
+}

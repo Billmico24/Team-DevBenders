@@ -1,19 +1,20 @@
+import { MagnifyingGlass } from 'react-loader-spinner';
 import React from 'react';
-import { ThreeDots } from 'react-loader-spinner';
-import { Overlay, LoaderContainer } from './Loader.styled';
-
+import scss from './Loader.module.scss';
 export const Loader = () => {
   return (
-    <Overlay>
-      <LoaderContainer>
-        <ThreeDots
-          type="ThreeDots"
-          color="#FC842D"
-          height={100}
-          width={100}
-          timeout={3000}
-        />
-      </LoaderContainer>
-    </Overlay>
+    <div className={scss.loader}>
+      {' '}
+      <MagnifyingGlass
+        visible={true}
+        height="80"
+        width="80"
+        ariaLabel="MagnifyingGlass-loading"
+        wrapperStyle={{}}
+        wrapperClass="MagnifyingGlass-wrapper"
+        glassColor="#c0efff"
+        color="#e15b64"
+      />
+    </div>
   );
 };

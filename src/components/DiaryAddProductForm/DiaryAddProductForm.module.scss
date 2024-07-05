@@ -1,0 +1,198 @@
+.DivCtnterd {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 23px;
+  height: 23px;
+}
+
+.Calendar {
+  display: flex;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px !important;
+  width: calc(100% - 517px);
+
+  margin-bottom: 69px;
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 0;
+    padding-left: 32px;
+    padding-right: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 60px;
+    // padding-left: 16px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 80px;
+    // margin-bottom: 60px;
+    padding: 0 20px;
+  }
+}
+
+.FieldProduct {
+  position: relative;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 22px;
+    width: 240px;
+  }
+}
+
+.FieldWeight {
+  position: relative;
+  width: 100%;
+  margin-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-right: 67px;
+    width: 107px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 60px;
+  }
+}
+
+.Label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 0.3);
+  font-family: 'Verdana';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #9b9faa;
+}
+
+.Input {
+  padding: 5px;
+  line-height: normal;
+  display: inline-block;
+  height: 48px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  color: #212121;
+  outline: none;
+  margin-bottom: 60px;
+  @media screen and (min-width: 767px) {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #fc842d;
+  }
+
+  &:focus~label,
+  &:valid~label {
+    top: 0px;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 10px;
+  }
+
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+.LabelWeight {
+  left: 0;
+
+  @media screen and (min-width: 768px) {
+    left: auto;
+    right: 0;
+  }
+}
+
+.LabelTitle {
+  left: 0;
+}
+
+.InputWeight {
+  @media screen and (min-width: 768px) {
+    text-align: right;
+  }
+
+  text-align: left;
+}
+
+
+.btnMobil {
+  margin-bottom: 60px;
+}
+
+.fieldRow {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  //  
+  margin-top: 60px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.Calendar {
+  display: flex;
+  gap: 21px;
+  width: 100%;
+}
+
+.inputCalendar {
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 41px;
+
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 34px;
+    line-height: 41px;
+
+  }
+}
+
+.Input::placeholder {
+  position: relative;
+  left: -5px;
+  color: #9b9faa;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+}

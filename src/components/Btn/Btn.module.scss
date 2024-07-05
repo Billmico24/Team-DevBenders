@@ -1,0 +1,58 @@
+@import '../../styles/utils/mixins';
+
+.btn {
+  background-color: var(--accent-color);
+  transition: all .5s ease;
+  color: var(--btn-text-color);
+  border-color: transparent;
+  box-shadow: 0px 4px 10px rgba(252, 132, 45, 0.5);
+  font-weight: 700;
+  font-size: var(--text-size);
+  text-align: center;
+  line-height: 1.2;
+  &:focus,
+  &:hover {
+    background-color: #ea4f0c;
+    box-shadow: 0px 4px 20px rgba(252, 132, 45, 0.5);
+    border-color: transparent;
+  }
+}
+
+.start {
+  composes: btn;
+  border-radius: 30px;
+  height: 43px;
+  width: 210px;
+  margin: 0 auto;
+  &:focus,
+ &:hover {
+    background-color: #ea4f0c;
+    box-shadow: 0px 4px 20px #ea4f0c;
+    border-color: transparent;
+  }
+}
+
+.login {
+  composes: btn;
+  border-radius: 30px;
+  width: 182px;
+  height: 44px;
+  &:focus,
+ &:hover {
+    background-color: #ea4f0c;
+    box-shadow: 0px 4px 20px #ea4f0c;
+    border-color: transparent;
+  }
+}
+.plus {
+  composes: btn;
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  margin: 0 auto;
+  &:focus,
+  &:hover {
+    background-color: #ea4f0c;
+    box-shadow: 0px 4px 20px #ea4f0c;
+  }
+}
