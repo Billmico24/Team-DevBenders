@@ -68,7 +68,7 @@ const Modal = ({ onClose, isModalOpen }) => {
               <div className={scss.caloriesContainer}>
                 <span className={scss.calories}>
                   {user?.dailyRate && Math.floor(user.dailyRate)}
-                  <span className={scss.caloriesText}> ккал</span>
+                  <span className={scss.caloriesText}> kcal</span>
                 </span>
               </div>
               <h2 className={scss.secondaryTitle}>
