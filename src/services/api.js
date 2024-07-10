@@ -5,7 +5,8 @@ import { omit } from 'lodash';
 
 //  const userId = useSelector(selectUserId);
 // axios.defaults.baseURL = 'http://localhost/3000';
-axios.defaults.baseURL ='https://slimmom-rvms.onrender.com/';
+// axios.defaults.baseURL = 'https://slimmom-backend.goit.global';
+axios.defaults.baseURL ='https://team-devbenders-backend.onrender.com/';
 
 export const AuthApi = {
   // registering user
