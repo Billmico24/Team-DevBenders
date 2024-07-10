@@ -1,0 +1,52 @@
+:root {
+    --main-text-color: #212121;
+    --grey-text-color: #9B9FAA;
+    --accent-color: #FC842D;
+    --text-size: 14px;
+}
+
+:root.themeLight {
+    --btn-text-color: #FFFFFF;
+    --sidebgrColor: #F0F1F3;
+    --titleSideColor: #212121;
+    --sidebarText: #9B9FAA;
+    --main-text-color: #212121;
+    --active: #212121;
+    --header: transparent;
+    --body: transparent;
+    --userInfoContainer: #EFF1F3;
+    --btnContainer: #EFF1F3;
+    --caloriesFormInput: #9B9FAA;
+    --radioButtonContainer: #9b9faa;
+    --caloriesForm: #9b9faa;
+    --caloriesFormLabel: #9b9faa;
+    --caloriesFormTitle: #000;
+    --notification: #949cb4;
+    --muiDateCalendar: #EFF1F3;
+    --switcher: transparent;
+    --navigation: #9b9faa;
+    --modal: #9b9faa;
+}
+
+:root.themeDark {
+    --btn-text-color: #8d92a0;
+    --sidebgrColor: rgba(38, 64, 97, 0.5);
+    --titleSideColor: #dbece9d8;
+    --sidebarText: #9cd4a8;
+    --main-text-color: #e2d4d4;
+    --active: #ebe5e5;
+    --header: rgba(38, 64, 97, 0.6);
+    --body: rgba(38, 64, 97, 0.6);
+    --userInfoContainer: rgba(38, 64, 97, 0.2);
+    --btnContainer: rgba(38, 64, 97, 0.2);
+    --caloriesFormInput: #233468;
+    --radioButtonContainer: #233468;
+    --caloriesForm: #ccccf0;
+    --caloriesFormLabel: #ccccf0;
+    --caloriesFormTitle: #1c2f62;
+    --notification: rgba(15, 15, 16, 0.5);
+    --muiDateCalendar: #495d94;
+    --switcher: #ccc;
+    --navigation: #db7923;
+    --modal: #000;
+}

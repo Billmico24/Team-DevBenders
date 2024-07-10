@@ -1,0 +1,102 @@
+// /* сюди імпортуємо компоненти лого, навігацію та/або юзер інфо*/
+.header {
+  width: 100%;
+  padding: 20px 20px 16px 20px;
+  border-bottom: 2px solid #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line {
+  margin-left: 20px;
+  padding-top: 3px;
+  opacity: 0;
+}
+
+.decoration {
+  margin-left: 20px;
+  display: flex;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 14px;
+}
+
+.navigation__item {
+  font-size: 14px;
+  font-weight: bold;
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-top: 18px;
+}
+
+.default {
+  color: var(--default);
+}
+
+.active {
+  color: var(--active);
+}
+
+.userinfo {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .userinfo {
+    display: contents;
+  }
+
+  .header {
+    padding: 20px 32px 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 24px;
+    flex-grow: 1;
+  }
+
+  .line {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1279px) {
+  .header {
+    padding: 80px 16px 0 16px;
+    border-bottom: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .line {
+    opacity: 1;
+    padding-top: 41px;
+  }
+
+  .decoration {
+    margin: 37px 20px 0 20px;
+    text-decoration: none;
+    flex-grow: 1;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: auto;
+    // flex-grow: 1;
+  }
+}
