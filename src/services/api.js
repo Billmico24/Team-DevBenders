@@ -61,6 +61,16 @@ export const AuthApi = {
   },
 };
 
+export const UserApi = {
+  async getUserInfo() {
+    const { data } = await axios.get('/users/current', {
+      headers: { Authorization: axios.defaults.headers.common.Authorization }
+    });
+    return data;
+  },
+};
+
+
 export const DailyApi = {
   // info about unregistered user
   async getDailyRateInfo(userInfo) {
@@ -122,12 +132,6 @@ export async function getDayInfo(date) {
   return data;
 }
 
-export const UserApi = {
-  async getUserInfo() {
-    const { data } = await axios.get('/user');
-    return data;
-  },
-};
 
 
 export const token = {
