@@ -6,8 +6,30 @@ import { omit } from 'lodash';
 //  const userId = useSelector(selectUserId);
 // axios.defaults.baseURL = 'http://localhost/3000';
 // axios.defaults.baseURL = 'https://slimmom-backend.goit.global';
-axios.defaults.baseURL ='https://team-devbenders-backend.onrender.com/';
+// axios.defaults.baseURL ='https://team-devbenders-backend.onrender.com/';
 
+/*
+List of endpoints use by Front End found in --> /src/services/api.js
+1. await axios.post('/auth/register', userData);
+2. await axios.post('/auth/logout');
+3. await axios.post('/auth/logout');
+4. await axios({
+      data: { sid },
+      headers: { Authorization: refreshToken },
+      method: 'post',
+      url: `/auth/refresh`
+5. await axios.post('/daily-rate', userInfo);
+6. axios.post(
+      `/daily-rate/${userInfo.userId}`,
+      omit(userInfo, ['userId'])
+7. await axios.get('/product/', { params: { search } });
+8. await axios.post('/day', productInfo);
+9. await axios.delete('/day', {data:productData});
+10. await axios.post('/day/info', {date});
+11. await axios.get('/user');
+*/
+
+axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
 export const AuthApi = {
   // registering user
   async registerNewUser(userData) {
