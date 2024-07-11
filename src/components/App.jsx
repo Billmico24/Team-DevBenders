@@ -14,7 +14,7 @@ import { ThemeNames } from '../types/themeNames';
 
 const SidePage = lazy(() => import('pages/SidePage/SidePage'));
 const CalculatorPage = lazy(() => import('pages/CalculatorPage/CalculatorPage'));
-const DairyPage = lazy(() => import('pages/DairyPage/DairyPage'));
+const DiaryPage = lazy(() => import('pages/DiaryPage/DiaryPage'));
 const RegistrationPage = lazy(() => import('pages/RegistrationPage/RegistrationPage'));
 const HomePage = lazy(() => import('pages/MainPage/MainPage'));
 const LoginPage = lazy(() => import('pages/LoginPage/LoginPage'));
@@ -45,7 +45,7 @@ export const App = () => {
             <Route path="/" element={<PrivateRoute />}>
               <Route path="/" element={<SidePage />}>
                 <Route path="/calculator" element={<CalculatorPage />} />
-                <Route path="/diary" element={<DairyPage />} />
+                <Route path="/diary" element={<DiaryPage />} />
               </Route>
             </Route>
             <Route path="/" element={<PublicRoute />}>

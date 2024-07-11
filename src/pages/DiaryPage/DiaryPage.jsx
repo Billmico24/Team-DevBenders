@@ -7,7 +7,7 @@ import { useWindowSize } from 'react-use';
 import { BsPlusLg } from 'react-icons/bs';
 import DiaryDateCalendar from '../../components/DiaryDateCalendar/DiaryDateCalendar';
 import { getInfoOper } from 'redux/diary/diaryOperation';
-import scss from './DairyPage.module.scss';
+import scss from './DiaryPage.module.scss';
 import { Btn } from 'components/Btn/Btn';
 import { ModalSearchForm } from 'components/ModalSearchForm/ModalSearchForm';
 import UserInfo from 'components/UserInfo/UserInfo';
