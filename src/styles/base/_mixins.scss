@@ -4,7 +4,7 @@ $breakpoints: (
     "desktop": 1280px,
 );
 
-//Дублювальні CSS-змінні для доступу до брейкпойнтів через JS
+//Duplicate CSS variables for breakpoint access via JS
 :root {
     --breakpoint-phone: #{map_get($breakpoints, "phone")};
     --breakpoint-tablet: #{map_get($breakpoints, "tablet")};
