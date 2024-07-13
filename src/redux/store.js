@@ -8,7 +8,7 @@ import {
   REGISTER,
 } from 'redux-persist';
 import { configureStore } from '@reduxjs/toolkit';
-import { rootReducer } from './rootReduser';
+import { rootReducer } from './rootReducer';
 
 export const store = configureStore({
     reducer: rootReducer,
