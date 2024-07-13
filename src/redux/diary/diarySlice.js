@@ -98,7 +98,7 @@ export const productSearchSlice = createSlice({
     setDate(state, action) {
       state.date = action.payload;
     },
-    deleteUserInfro(state, action) {
+    deleteUserInfo(state, action) {
       state.eatenProducts = [];
       state.summary = null;
     }  
@@ -106,4 +106,4 @@ export const productSearchSlice = createSlice({
 });
 
 export const productSearchReducer = productSearchSlice.reducer;
-export const { setDate, deleteUserInfro } = productSearchSlice.actions;
+export const { setDate, deleteUserInfo } = productSearchSlice.actions;

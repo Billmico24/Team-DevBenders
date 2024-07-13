@@ -6,13 +6,13 @@ import {
   selectUserName,
 } from 'redux/authorization/authSelectors';
 import Line from 'images/line.svg';
-import { deleteUserInfro } from 'redux/diary/diarySlice';
+import { deleteUserInfo } from 'redux/diary/diarySlice';
 
 const UserInfo = () => {
   const dispatch = useDispatch();
   const user = useSelector(selectUserName);
   const handleChange = () => {
-    dispatch(deleteUserInfro());
+    dispatch(deleteUserInfo());
     dispatch(logoutUser());
   
   };
