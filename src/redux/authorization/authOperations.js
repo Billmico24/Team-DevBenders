@@ -8,7 +8,9 @@ export const registerNewUser = createAsyncThunk(
       const result = await AuthApi.registerNewUser(credential);
       thunkAPI.dispatch(
         loginUser({ email: credential.email, password: credential.password })
-      );
+      ).unwrap();
+      //Fetch user info after successful login
+      await thunkAPI.dispatch(getUserInfo()).unwrap();
       return result;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
