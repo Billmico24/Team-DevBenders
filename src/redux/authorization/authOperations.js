@@ -7,13 +7,16 @@ export const registerNewUser = createAsyncThunk(
   async (credential, thunkAPI) => {
     try {
       const result = await AuthApi.registerNewUser(credential);
+      toast.success('Congratulations! We\'re thrilled to have you with us on your journey to better health and wellness. Get ready to explore our resources, track your progress, and achieve your goals.');
       thunkAPI.dispatch(
         loginUser({ email: credential.email, password: credential.password })
       ).unwrap();
       //Fetch user info after successful login
-      await thunkAPI.dispatch(getUserInfo()).unwrap();
+      await thunkAPI.dispatch(getUserInfo())
+      .unwrap();
       return result;
     } catch (error) {
+      toast.error(error.response.data.message);
       return thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -40,7 +43,7 @@ export const loginUser = createAsyncThunk(
     try {
       const result = await AuthApi.loginUser(credential);
       token.set(result.token);
-      toast.success("Successfully Login");
+      // toast.success("Successfully Login");
       return result;
     } catch (error) {
       toast.error(error.response.data.message);

@@ -8,6 +8,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store } from 'redux/store';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'styles/toastStyle.scss';
 // import { StrictMode } from 'react';
 
 const basename = process.env.REACT_APP_BASENAME || '/';
