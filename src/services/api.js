@@ -30,10 +30,11 @@ List of endpoints use by Front End found in --> /src/services/api.js
 */
 
 axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
+
 export const AuthApi = {
   // registering user
   async registerNewUser(userData) {
-    const { data } = await axios.post('/auth/register', userData);
+    const { data } = await axios.post('/auth/signup', userData);
     return data;
   },
 
@@ -81,7 +82,7 @@ export const DailyApi = {
   async getDailyRateInfoBasedOnId(userInfo) {
     const { data } = await axios.post(
       `/daily-rate/${userInfo.userId}`,
-      omit(userInfo, ['userId'])
+      omit(userInfo, ['userId']) 
     );
     return data;
   },
