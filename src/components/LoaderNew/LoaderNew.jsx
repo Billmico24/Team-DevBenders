@@ -4,7 +4,7 @@ import css from './LoaderNew.module.css';
 export const LoaderNew = () => {
   return (
     <div className={css.container}>
-      <RingLoader color="#FFA500" size={100} />
+      <RingLoader color="#FFFF" size={100} />
     </div>
   );
 };

@@ -53,21 +53,21 @@ export const DiaryProductsList = () => {
             style={{
               width: '64px',
               height: '64px',
-              color: `${isChristmas ? '#9B9FAA' : 'black'}`,
+              color: `${isChristmas ? '#FFFF' : 'white'}`,
             }}
           />}
           <p
             style={{
-              color: `${isChristmas ? '#9B9FAA' : 'black'}`,
+              color: `${isChristmas ? '#FFFF' : 'white'}`,
             }}
           >
-            Let's add some products!
+
           </p>
           {mobile && <HiArrowUp
             style={{
               width: '64px',
               height: '64px',
-              color: `${isChristmas ? '#9B9FAA' : 'black'}`,
+              color: `${isChristmas ? '#FFFF' : 'white'}`,
             }}
           />}
         </NoProductsContainer>
