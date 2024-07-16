@@ -1,19 +1,8 @@
-import { Navigate, Outlet } from 'react-router-dom';
-import { selectToken, selectIsLoggedIn } from 'redux/authorization/authSelectors';
 import { useSelector } from 'react-redux';
-import { Suspense } from 'react';
-import { Loader } from 'components/Loader/Loader';
+import { Navigate } from 'react-router-dom';
+import { getIsLoggedIn } from 'redux/authSelectors';
 
-export const PrivateRoute = () => {
-  const token = useSelector(selectToken);
-  const isLoggedIn = useSelector(selectIsLoggedIn);
-
-  return token && isLoggedIn ? (
-    <Navigate to='/register' />
-  ) : (
-    <Suspense fallback={<Loader />}>
-    <Outlet />
-  </Suspense>
-  );
+export const PrivateRoute = ({ children }) => {
+  const isLoggedIn = useSelector(getIsLoggedIn);
+  return isLoggedIn ? children : <Navigate to="/register" />;
 };
-

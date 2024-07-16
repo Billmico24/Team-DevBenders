@@ -1,28 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
-import './styles/index.scss';
+import './fonts/GothamPro-Bold.ttf';
+import './fonts/GothamPro-Light.ttf';
+import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { store, persistor } from './redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
-import { persistor, store } from 'redux/store';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import 'styles/toastStyle.scss';
-// import { StrictMode } from 'react';
+import { ThemeContextProvider } from 'components/Context/Context';
 
-const basename = process.env.REACT_APP_BASENAME || '/';
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <>
-  <BrowserRouter basename={basename}>        
-      <Provider store={store}>
+  <React.StrictMode>
+    <Provider store={store}>
+      <ThemeContextProvider>
         <PersistGate loading={null} persistor={persistor}>
-        {/* <StrictMode> */}
-          <App />
-        {/* </StrictMode> */}
+          <BrowserRouter basename="/Slim-Mom-Team-DevBenders">
+            <App />
+          </BrowserRouter>
         </PersistGate>
-      </Provider>
-    </BrowserRouter>
-    <ToastContainer />
-    </>
+      </ThemeContextProvider>
+    </Provider>
+  </React.StrictMode>
 );
