@@ -1,6 +1,6 @@
 import { ThemeContext } from 'components/Context/Context';
 import React, { useContext } from 'react';
-import { ThreeCircles } from 'react-loader-spinner';
+import { TailSpin } from 'react-loader-spinner';
 import { LoaderWrapper, MainLoader } from './Loader.styled';
 
 export const Loader = () => {
@@ -9,7 +9,7 @@ export const Loader = () => {
   return (
     <MainLoader>
       <LoaderWrapper>
-        <ThreeCircles
+        <TailSpin
           color={isChristmas ? '#D6001C' : '#FC842D'}
           arialLabel="loading-indicator"
           height="120"

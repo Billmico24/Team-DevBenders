@@ -30,11 +30,11 @@ export const ExitModal = ({ onClose, handleLogout }) => {
       >
         <InnerInfo>
           <h2 style={{ textAlign: 'center' }}>
-            Are you sure you want to log out?
+            Are you sure you want to exit?
           </h2>
           <img
-            src="https://media.tenor.com/JkNeDPW3I4oAAAAi/ninja-bear-bam.gif"
-            alt="cat"
+            src='../../images/sad.png'
+            alt="sad"
             height={isMobile ? '300' : '400'}
           />
         </InnerInfo>
