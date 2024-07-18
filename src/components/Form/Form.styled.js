@@ -7,9 +7,9 @@ export const Input = styled(Field)`
   padding-bottom: 8px;
   margin-bottom: 32px;
   border-bottom: ${p => p.theme.borders.normal};
-  font-family: ${p => p.theme.fonts.body};
-  /* line-height: ${p => p.theme.lineHeights.body}; */
-  line-height: 16px;
+  font-family: ${p => p.theme.fonts.normal};
+  line-height: ${p => p.theme.lineHeights.body};
+  line-height: 0.5px;
   font-size: ${p => p.theme.fontSizes[0]};
   color: ${p => p.theme.colors.black};
   letter-spacing: 0.04em;
@@ -34,7 +34,7 @@ export const Input = styled(Field)`
     width: 240px;
   }
   @media (min-width: 1024px) {
-    padding-bottom: 20px;
+    padding-bottom: 10px; /* 20px; */
     margin-bottom: 0;
     width: 240px;
   }
@@ -94,8 +94,7 @@ export const Error = styled.div`
   position: absolute;
   margin-top: -30px;
   font-size: 10px;
-  color: white;
-  background-color: red;
+  color: red;
   padding: 5px;
   border-radius: 5px;
   width: 75%;
