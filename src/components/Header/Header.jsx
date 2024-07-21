@@ -6,7 +6,7 @@ import logoDesktop from '../../images/logo/logoDesktop.png';
 import logoDesktopRetina from '../../images/logo/logoDesktop@2x.png';
 import { useMediaQuery } from 'react-responsive';
 import React, { useContext, useState } from 'react';
-import { BtnList, HeaderStyled, Logo } from './Header.styled';
+import { BtnList, HeaderStyled, Logo, ToggleWrapper } from './Header.styled'; // Added ToggleWrapper
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { RxCross2 } from 'react-icons/rx';
 import { BottomSection } from './UserInfo/UserInfo';
@@ -16,7 +16,8 @@ import { StyledLink } from './Header.styled';
 import { useSelector } from 'react-redux';
 import { getUserName } from 'redux/authSelectors';
 import { useLocation } from 'react-router-dom';
-import { ThemeContext } from 'components/Context/Context';
+import { ThemeContext } from 'components/Context/Context'; // Updated to match the actual file name
+import NightModeToggleButton from 'components/Toggle/ToggleNightModeButton';
 
 export const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -45,7 +46,7 @@ export const Header = () => {
     }
   };
 
-  const { isChristmas } = useContext(ThemeContext);
+  const { isNightMode } = useContext(ThemeContext);
 
   return (
     <>
@@ -53,7 +54,7 @@ export const Header = () => {
         <Link to={'/'}>
           <Logo src={takeLogo()} />
         </Link>
-
+        
         {userName ? (
           <>
             {isTablet && <BottomSection name={userName} />}
@@ -70,7 +71,7 @@ export const Header = () => {
                     style={{
                       width: '24px',
                       height: '24px',
-                      color: `${isChristmas ? '#D6001C' : 'black'}`,
+                      color: `${isNightMode ? '#D6001C' : 'black'}`, // Updated to use night mode
                     }}
                     onClick={() => setOpenNavigation(false)}
                   />
@@ -79,7 +80,7 @@ export const Header = () => {
                     style={{
                       width: '24px',
                       height: '24px',
-                      color: `${isChristmas ? '#D6001C' : 'black'}`,
+                      color: `${isNightMode ? '#D6001C' : 'black'}`, // Updated to use night mode
                     }}
                     onClick={() => {
                       setOpenNavigation(true);
@@ -100,6 +101,11 @@ export const Header = () => {
             </li>
             <li>
               <StyledLink to="register">Registration</StyledLink>
+            </li>
+            <li>
+              <ToggleWrapper>
+                <NightModeToggleButton /> {/* Added night mode toggle button */}
+              </ToggleWrapper>
             </li>
           </BtnList>
         )}

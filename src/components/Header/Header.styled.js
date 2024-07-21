@@ -19,7 +19,7 @@ export const HeaderStyled = styled.header`
   @media (min-width: 1024px) {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, 0);
     justify-content: flex-start;
     align-items: flex-end;
@@ -56,7 +56,7 @@ export const BtnList = styled.ul`
     &:before {
       content: '';
       position: absolute;
-      top: -5px;
+      top: 10px;
       left: -20px;
       height: 32px;
       width: 2px;
@@ -121,6 +121,40 @@ export const StyledLink = styled(NavLink)`
     &:hover,
     &:focus {
       color: ${p => p.theme.colors.gray};
+    }
+  }
+`;
+
+export const ToggleWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+
+  button {
+    border: none;
+    background: ${p => p.theme.colors.white};
+    border-radius: 50%;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      background: ${p => p.theme.colors.grayLight};
+    }
+
+    @media (min-width: 1024px) {
+      background: transparent;
+      color: ${p => p.theme.colors.black};
+      &:focus,
+      &:hover {
+        background: transparent;
+        color: ${p => p.theme.colors.gray};
+      }
     }
   }
 `;

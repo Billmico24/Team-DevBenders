@@ -8,14 +8,13 @@ import {
 } from 'components/CalculatorPage/CalculatorPage.styled';
 import { ThemeContext } from 'components/Context/Context';
 import { useContext } from 'react';
-import Snowfall from 'react-snowfall';
 import { getUserInfo } from 'redux/authSelectors';
 import { useSelector } from 'react-redux';
 import Modal from 'components/Modal/Modal';
 import { RightSideBar } from 'components/RightSideBar/RightSideBar';
 
 const CalculatorPage = () => {
-  const { isChristmas } = useContext(ThemeContext);
+  const { isNightMode } = useContext(ThemeContext);
 
   const [isModalOpened, setIsModalOpened] = useState(false);
   const [userParams, setUserParams] = useState(null);
@@ -34,7 +33,7 @@ const CalculatorPage = () => {
   return (
     <WrapperAll>
       <CalculatorPageWrapper>
-        {isChristmas && <Snowfall />}
+        {isNightMode}
         {isModalOpened && (
           <Modal onClose={onModalClose} userParams={userParams} />
         )}

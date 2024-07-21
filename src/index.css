@@ -28,10 +28,40 @@ body {
   margin: 0;
   font-family: VerdanaBold;
   box-sizing: border-box;
+  background: #fff;
+  color: #000;
 }
-body.christmas {
+/* Night mode styles */
+body.nightmode {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  color: #c9bdbd;
 }
+
+/* Ensure all text elements are covered */
+body.nightmode h1,
+body.nightmode h2,
+body.nightmode h3,
+body.nightmode h4,
+body.nightmode h5,
+body.nightmode h6,
+body.nightmode p,
+body.nightmode span,
+body.nightmode a,
+body.nightmode div,
+body.nightmode section {
+  color: #c9bdbd;
+}
+
+/* Example of night mode for a specific component */
+.Section {
+  color: #000; /* Default color */
+}
+
+body.nightmode .Section {
+  color: #fff; /* Night mode color */
+}
+
+
 
 h1,
 h2,

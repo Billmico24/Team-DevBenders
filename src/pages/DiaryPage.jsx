@@ -12,14 +12,13 @@ import AddIcon from '../images/svg/add.svg';
 import { Box } from 'components/Box';
 import { ThemeContext } from 'components/Context/Context';
 import { useContext } from 'react';
-import Snowfall from 'react-snowfall';
 
 const body = document.querySelector('body');
 
 const DiaryPage = () => {
   const [isModalOpened, setIsModalOpened] = useState(false);
   const mobile = useMediaQuery({ query: '(max-width: 426px)' });
-  const { isChristmas } = useContext(ThemeContext);
+  const { isNightMode } = useContext(ThemeContext);
 
   const onModalOpen = () => {
     setIsModalOpened(true);
@@ -33,7 +32,7 @@ const DiaryPage = () => {
 
   return (
     <WrapperAll>
-      {isChristmas && <Snowfall />}
+      {isNightMode}
       <Wrapper>
         <DiaryDateCalendar />
         {!mobile && <DiaryAddProductForm />}

@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@tsparticles/react": "^3.0.0",
     "axios": "^1.2.1",
+    "element-animation": "^1.0.1",
     "formik": "^2.2.9",
     "moment": "^2.29.4",
     "react": "^18.3.1",

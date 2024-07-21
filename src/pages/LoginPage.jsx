@@ -7,7 +7,6 @@ import { useNavigate } from 'react-router-dom';
 import { useLogInUserMutation } from 'redux/auth';
 import { useDispatch } from 'react-redux';
 import { setUser } from 'redux/authSlice';
-import Snowfall from 'react-snowfall';
 import { Error, Input, List } from 'components/Form/Form.styled';
 import { Button } from 'components/Button/Button';
 import {
@@ -39,7 +38,7 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const [loginUser, { status }] = useLogInUserMutation();
   const dispatch = useDispatch();
-  const { isChristmas } = useContext(ThemeContext);
+  const { isNightMode } = useContext(ThemeContext);
   const [isShowPassword, setIsShowPassword] = useState(false);
 
   const handleSubmit = async (values, { resetForm }) => {
@@ -59,7 +58,7 @@ const LoginPage = () => {
 
   return (
     <WrapperWithFruits>
-      {isChristmas && <Snowfall />}
+      {isNightMode }
       {status === 'pending' && <Loader />}
       <Wrapper style={{ paddingBottom: '255px' }}>
         <H2>Log In</H2>

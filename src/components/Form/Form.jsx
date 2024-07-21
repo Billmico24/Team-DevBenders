@@ -166,7 +166,7 @@ export const WeightForm = ({ openModal, setUserParams, initialValues }) => {
             </li>
 
             <li>
-              <Paragraph>Blood type *</Paragraph>
+              <Paragraph>Blood type</Paragraph>
               <CheckboxContainer role="group" aria-labelledby="my-radio-group">
                 <Label>
                   <Checkbox type="radio" name="bloodType" value="1" />1

@@ -11,7 +11,7 @@ import { useMediaQuery } from 'react-responsive';
 import { apiListMyProducts } from 'services/api/api';
 
 export const DiaryProductsList = () => {
-  const { isChristmas } = useContext(ThemeContext);
+  const { isNightMode } = useContext(ThemeContext);
   const mobile = useMediaQuery({ query: '(max-width: 426px)' });
   const token = useSelector(getToken);
   const date = useSelector(selectDate);
@@ -53,12 +53,12 @@ export const DiaryProductsList = () => {
             style={{
               width: '64px',
               height: '64px',
-              color: `${isChristmas ? '#FFFF' : 'white'}`,
+              color: `${isNightMode ? '#FFFF' : 'white'}`,
             }}
           />}
           <p
             style={{
-              color: `${isChristmas ? '#FFFF' : 'white'}`,
+              color: `${isNightMode ? '#FFFF' : 'white'}`,
             }}
           >
 
@@ -67,7 +67,7 @@ export const DiaryProductsList = () => {
             style={{
               width: '64px',
               height: '64px',
-              color: `${isChristmas ? '#FFFF' : 'white'}`,
+              color: `${isNightMode ? '#FFFF' : 'white'}`,
             }}
           />}
         </NoProductsContainer>
