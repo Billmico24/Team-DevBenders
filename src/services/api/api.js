@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://team-devbenders-backend.onrender.com/';
+axios.defaults.baseURL = 'https://team-devbenders-backend.onrender.com';
 // axios.defaults.baseURL = 'http://localhost:3001';
 // const API_KEY = '';
 
