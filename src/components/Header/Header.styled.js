@@ -19,7 +19,7 @@ export const HeaderStyled = styled.header`
   @media (min-width: 1024px) {
     position: absolute;
     top: 0;
-    left: 60%;
+    left: 50%;
     transform: translate(-50%, 0);
     justify-content: flex-start;
     align-items: flex-end;

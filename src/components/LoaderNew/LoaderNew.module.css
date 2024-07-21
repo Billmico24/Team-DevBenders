@@ -1,9 +1,11 @@
 .container {
-  margin-top: 200px;
-  margin-left: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
 
   @media screen and (min-width: 768px) {
-    /* margin-top: 200px; */
-    margin-left: 25px;
+    margin-top: 200px; /* Keeps the top margin on larger screens */
+    justify-content: center; /* Center horizontally */
   }
 }

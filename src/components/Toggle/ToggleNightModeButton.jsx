@@ -10,7 +10,7 @@ const ToggleButton = styled.button`
   background: transparent;
   cursor: pointer;
   width: 40px; /* Adjust size as needed */
-  height: 40px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://slim-mom-backend-team-project-ik9a.onrender.com';
+// axios.defaults.baseURL = 'https://slimmom-backend-team-devbenders.onrender.com;
+axios.defaults.baseURL = 'http://localhost:3001';
 // const API_KEY = '';
 
 const END_POINTS = {

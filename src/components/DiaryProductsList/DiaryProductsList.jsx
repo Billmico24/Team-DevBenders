@@ -53,12 +53,12 @@ export const DiaryProductsList = () => {
             style={{
               width: '64px',
               height: '64px',
-              color: `${isNightMode ? '#FFFF' : 'white'}`,
+              color: `${isNightMode ? '00FFFFFFFF' : 'transparent'}`,
             }}
           />}
           <p
             style={{
-              color: `${isNightMode ? '#FFFF' : 'white'}`,
+              color: `${isNightMode ? '#00FFFFFF' : 'transparent'}`,
             }}
           >
 
@@ -67,7 +67,7 @@ export const DiaryProductsList = () => {
             style={{
               width: '64px',
               height: '64px',
-              color: `${isNightMode ? '#FFFF' : 'white'}`,
+              color: `${isNightMode ? '#00FFFFFF' : 'transparent'}`,
             }}
           />}
         </NoProductsContainer>

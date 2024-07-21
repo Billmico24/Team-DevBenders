@@ -4,7 +4,7 @@ import leavesTablet from '../../images/diary-page/leaf-tablet.png';
 // import SideBarBgDesk from '../../images/diary-page/sidebar-bg-desk.png';
 
 export const Wrapper = styled.div`
-  background-color: #f0f1f3;
+  background-color: 'transparent';
   padding: 40px 20px 84px 20px;
 
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -28,6 +28,7 @@ export const Wrapper = styled.div`
     margin-right: 105px;
     padding: 0px;
   }
+
 `;
 
 export const SummaryWrap = styled.div`

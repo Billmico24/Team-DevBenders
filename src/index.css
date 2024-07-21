@@ -1,5 +1,3 @@
-@import-normalize; /* bring in normalize.css styles */
-
 @font-face {
   font-family: 'GothamProBold';
   src: local('GothamProBold'),

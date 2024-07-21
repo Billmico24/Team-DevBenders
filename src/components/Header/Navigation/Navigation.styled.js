@@ -66,7 +66,7 @@ export const Nav = styled.nav`
   @media (min-width: 1024px) {
     top: 0px;
     z-index: 0;
-    width: 100%;
+    width: 50%;
     background: transparent;
     margin-left: 0;
     padding: 0;

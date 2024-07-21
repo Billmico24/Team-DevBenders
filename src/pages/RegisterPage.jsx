@@ -57,15 +57,23 @@ const RegisterPage = () => {
   const [isShowPassword, setIsShowPassword] = useState(false);
 
   const handleSubmit = async (values, { resetForm }) => {
+    console.log('Submitting form...');
     const userDataForRegisterAll = { ...values, ...userDataForRegister };
-    const user = await registerUser(userDataForRegisterAll).unwrap();
-    const loginValues = { ...values };
-    delete loginValues.name;
-    const userLogin = await loginUser(loginValues).unwrap();
-    dispatch(setCredentials(user));
-    dispatch(setUser(userLogin));
-    navigate(routes.diary);
-    resetForm();
+    try {
+      const user = await registerUser(userDataForRegisterAll).unwrap();
+      console.log('User registered:', user);
+      const loginValues = { ...values };
+      delete loginValues.name;
+      const userLogin = await loginUser(loginValues).unwrap();
+      console.log('User logged in:', userLogin);
+      dispatch(setCredentials(user));
+      dispatch(setUser(userLogin));
+      console.log('Navigating to diary...');
+      navigate(routes.diary);
+      resetForm();
+    } catch (error) {
+      console.error('Error during registration or login:', error);
+    }
   };
   const handleClick = () => {
     navigate(routes.login);

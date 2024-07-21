@@ -4,6 +4,7 @@ import leaves from '../../images/diary-page/leaf-desk.png';
 // import leavesTabletRetina from '../../images/hero/tablet/leaves@2x.png';
 import leavesTablet from '../../images/hero/tablet/leaves.png';
 import SideBarBgDesk from '../../images/diary-page/sidebar-bg-desk.png';
+import SideBarBgDeskNight from '../../images/diary-page/sidebar-bg-desk-dark.png';
 
 export const WrapperAll = styled.div`
 
@@ -22,21 +23,31 @@ export const WrapperAll = styled.div`
     background-repeat: no-repeat, no-repeat;
     background-size: auto, 50% 100%;
     background-position: top 0px right 0px, top 0px right -110px;
+  
+    /* Night mode styles */
+    body.nightmode & {
+      background-image: url(${leaves}), url(${SideBarBgDeskNight});
+    }
   }
   @media (min-width: 1121px) and (max-width: 1280px) {
     margin: 0 auto;
     /* height: 100vh; */
-    padding: 300px 16px 55px 16px;
+    padding: 300px 160px 55px 160px;
     display: flex;
     justify-content: space-between;
     background-image: url(${leaves}), url(${SideBarBgDesk});
     background-repeat: no-repeat, no-repeat;
     background-size: auto, 40% 100%;
     background-position: top 0px right 0px, top 0px right 0px;
+
+    /* Night mode styles */
+    body.nightmode & {
+      background-image: url(${leaves}), url(${SideBarBgDeskNight});
+    }
   }
   @media (min-width: 1280px) {
     margin: 0 auto;
-    padding: 300px 16px 55px 16px;
+    padding: 300px 160px 55px 160px;
     display: flex;
     /* height: 100vh; */
     justify-content: space-between;
@@ -44,6 +55,11 @@ export const WrapperAll = styled.div`
     background-repeat: no-repeat, no-repeat;
     background-size: auto, 40% 100%;
     background-position: top 0px right 0px, top 0px right 0px;
+
+    /* Night mode styles */
+    body.nightmode & {
+      background-image: url(${leaves}), url(${SideBarBgDeskNight});
+    }
   }
 `;
 

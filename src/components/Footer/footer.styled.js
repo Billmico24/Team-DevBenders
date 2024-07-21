@@ -1,5 +1,4 @@
 const footerStyle = {
-    marginTop: '100px',
     backgroundColor: '#333',
     color: '#fff',
     padding: '20px',

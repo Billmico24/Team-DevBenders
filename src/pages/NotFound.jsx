@@ -10,13 +10,12 @@ const NotFound = () => {
   return (
     <>
       {isNightMode}
-      <section style={{ padding: '150px 0 50px', background: '#fff' }}>
-        <h1 style={{ fontSize: '64px', textAlign: 'center' }}>404</h1>
+      <section style={{ padding: '0px 0 0px', background: '#fff' }}>
         <div
           style={{
             backgroundImage:
-              'url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif)',
-            height: '400px',
+              'url(https://cdn.dribbble.com/userupload/8726278/file/original-ab1bde6f9c74de5c8961f7fe84990cd4.gif)',
+            height: '700px',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             textAlign: 'center',
