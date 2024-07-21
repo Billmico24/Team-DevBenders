@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Team-DevBender/static/css/main.dc7e3440.css",
-    "main.js": "/Team-DevBender/static/js/main.69299aec.js",
+    "main.js": "/Team-DevBender/static/js/main.c6f0f02a.js",
     "static/js/937.86a55320.chunk.js": "/Team-DevBender/static/js/937.86a55320.chunk.js",
     "static/js/933.6c1ea841.chunk.js": "/Team-DevBender/static/js/933.6c1ea841.chunk.js",
     "static/js/25.e098aa78.chunk.js": "/Team-DevBender/static/js/25.e098aa78.chunk.js",
@@ -34,7 +34,7 @@
     "static/media/cross.svg": "/Team-DevBender/static/media/cross.8cdb920ca8331504fc3379915d48c780.svg",
     "static/media/add.svg": "/Team-DevBender/static/media/add.abbad4ece4830b88ccd984afbf9c2a1f.svg",
     "main.dc7e3440.css.map": "/Team-DevBender/static/css/main.dc7e3440.css.map",
-    "main.69299aec.js.map": "/Team-DevBender/static/js/main.69299aec.js.map",
+    "main.c6f0f02a.js.map": "/Team-DevBender/static/js/main.c6f0f02a.js.map",
     "937.86a55320.chunk.js.map": "/Team-DevBender/static/js/937.86a55320.chunk.js.map",
     "933.6c1ea841.chunk.js.map": "/Team-DevBender/static/js/933.6c1ea841.chunk.js.map",
     "25.e098aa78.chunk.js.map": "/Team-DevBender/static/js/25.e098aa78.chunk.js.map",
@@ -46,6 +46,6 @@
   },
   "entrypoints": [
     "static/css/main.dc7e3440.css",
-    "static/js/main.69299aec.js"
+    "static/js/main.c6f0f02a.js"
   ]
 }
