@@ -1,125 +1,110 @@
-# SlimMom
+# Slim Mom App
 
-## GoIT Team "Code NIN.JAS" Project SlimMom
-![image](https://github.com/user-attachments/assets/cf831c8b-5b40-45ac-bb01-a7d86c591c38)
+Slim Mom is a health and fitness application developed by **Team Devbenders**. Our goal is to help users manage their diet and track their daily caloric intake with ease.
 
-## [ Front-end Technologies ]
+## Team Devbenders
 
+### Members and Contributions
 
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
-![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
-![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
-![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)
-![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+- **Bill Mico Malazarte** - Team Leader
+  - Contributions: In charge of the backend, Product Management
+  - LinkedIn: [Bill Mico Malazarte](https://www.linkedin.com/in/bill-mico-malazarte/)
 
-## [ Back-end Technologies ]
+- **Alexander Dinoy Jr.** - Scrum-master
+  - Contributions: In charge of the frontend, Calculator and Modal
+  - LinkedIn: [Alexander Dinoy Jr.](https://www.linkedin.com/in/alexander-d-18b292216/)
 
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+- **Jovelyn Molos** - Frontend Developer
+  - Contributions: User Summary & Food not recommended
+  - LinkedIn: [Jovelyn Molos](https://www.linkedin.com/in/jovelyn-molos-139100114/)
 
-## [ Repo information ]
+- **Franci Reyes Giordani** - Frontend Developer
+  - Contributions: Home file, favicon
+  - LinkedIn: [Franci Reyes Giordani](https://www.linkedin.com/in/franci-giordani-581014156/)
 
-![Repo size](https://img.shields.io/github/repo-size/crux16/slim-mom-frontend-team-project?style=flat-square)
-![GitHub top language](https://img.shields.io/github/languages/top/crux16/slim-mom-frontend-team-project?style=flat-square)
+- **Judielyn Pagente** - Frontend Developer
+  - Contributions: User Dashboard and Diary/Add product
+  - LinkedIn: [Judielyn Pagente](https://www.linkedin.com/in/judielyn-pagente-9a3127169/)
 
-### Contributors
+- **Crisanto Pedroso** - Frontend Developer
+  - Contributions: Footer and Team Modal
+  - LinkedIn: [Crisanto Pedroso](mailto:budiepeds@gmail.com) <!-- Updated email to LinkedIn if available -->
 
-<!-- markdownlint-disable -->
-<!-- readme: contributors,ImgBotApp/- -start -->
-<table>
-<tr>
-    <td align="center">
-        <a href="https://github.com/">
-            <img src="" width="100;" alt="Rowell"/>
-            <br />
-            <sub><b>Developer</b></sub>
-            <br />
-            <sub><img src='https://github.com/user-attachments/assets/6135aac6-8523-46ea-90fe-4467c7bd74f1' alt="PH"/></b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/">
-            <img src="" width="100;" alt="Les John Paul"/>
-            <br />
-            <sub><b>Developer</b></sub>
-            <br />
-            <sub><img src='https://github.com/user-attachments/assets/6135aac6-8523-46ea-90fe-4467c7bd74f1' alt="PH"/></b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/">
-            <img src="" width="100;" alt="Josh"/>
-            <br />
-            <sub><b>Developer</b></sub>
-            <br />
-            <sub><img src='https://github.com/user-attachments/assets/6135aac6-8523-46ea-90fe-4467c7bd74f1' alt="PH"/></b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/">
-            <img src="" width="100;" alt="Anggi"/>
-            <br />
-            <sub><b>Developer</b></sub>
-            <br />
-            <sub><img src='https://github.com/user-attachments/assets/6135aac6-8523-46ea-90fe-4467c7bd74f1' alt="PH"/></b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/">
-            <img src="" width="100;" alt="Mon"/>
-            <br />
-            <sub><b>Developer</b></sub>
-            <br />
-            <sub><img src='https://github.com/user-attachments/assets/6135aac6-8523-46ea-90fe-4467c7bd74f1' alt="PH"/></b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/">
-            <img src="" width="100;" alt="Paulo"/>
-            <br />
-           <sub><b>Developer</b></sub>
-            <br />
-            <sub><img src='https://github.com/user-attachments/assets/6135aac6-8523-46ea-90fe-4467c7bd74f1' alt="PH"/></b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/">
-            <img src="" width="100;" alt="Cris"/>
-            <br />
-            <sub><b>Developer</b></sub>
-            <br />
-            <sub><img src='https://github.com/user-attachments/assets/6135aac6-8523-46ea-90fe-4467c7bd74f1' alt="PH"/></b></sub>
-        </a>
-    </td>
-    </tr>
-    <tr>
-    <td align="center">
-        <a href="https://github.com/">
-            <img src="" width="100;" alt="Ramz"/>
-            <br />
-            <sub><b>Developer</b></sub>
-            <br />
-            <sub><img src='https://github.com/user-attachments/assets/6135aac6-8523-46ea-90fe-4467c7bd74f1' alt="PH"/></b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/">
-            <img src="" width="100;" alt="Lauren"/>
-            <br />
-            <sub><b>Developer</b></sub>
-            <br />
-            <sub><img src='https://github.com/user-attachments/assets/6135aac6-8523-46ea-90fe-4467c7bd74f1' alt="PH"/></b></sub>
-        </a>
-    </td>
-    </tr>
-</table>
-<!-- readme: contributors,ImgBotApp/- -end -->
+- **Jed Alston Fallorina** - Backend Developer
+  - Contributions: Daily Calorie Allowance and Foods
+  - LinkedIn: [Jed Alston Fallorina](https://www.linkedin.com/in/jed-alston-fallorina-992853254/)
+
+- **Cyfred Odarve** - Backend Developer
+  - Contributions: Authentication and Authorization
+  - LinkedIn: [Cyfred Odarve](https://www.linkedin.com/in/cyfred-odarve-6a68b890/)
+
+- **Percival Aceron** - Backend Developer
+  - Contributions: Daily Information and Documentation
+  - LinkedIn: [Percival Aceron](https://www.linkedin.com/in/percival-aceron/)
+
+## Project Overview
+
+Slim Mom is a comprehensive health and fitness application designed to help users manage their diet and track daily caloric intake. The application provides personalized recommendations and an intuitive dashboard to monitor progress effectively.
+
+## Features
+
+- User authentication and authorization
+- Daily caloric intake calculator
+- Dashboard to track user progress
+- Recommendations for non-recommended foods
+- User-friendly UI
+
+## Frontend Tools and Technologies
+
+- **HTML/CSS**
+- **JavaScript**
+- **Animate.css**
+- **Axios**
+- **Notiflix**
+- **Redux**
+- **Formick**
+- **Sass**
+- **Lodash**
+- **Toastify**
+- **Loader spinner**
+- **Nanoid**
+
+## Backend Tools and Technologies
+
+- **Node.js**
+- **Express.js**
+- **MongoDB**
+- **Mongoose**
+- **Swagger**
+- **JWT (JSON Web Tokens)**
+- **UUID**
+- **Joi**
+- **Morgan**
+
+## Utilities
+
+- **Trello**
+- **VSCode**
+- **Figma**
+- **Git/GitHub**
+- **Prettier**
+- **CI/CD Tools**
+- **Postman**
+- **Nginx**
+- **Render**
+
+## Programming Languages
+
+- **JavaScript** - Used for both frontend and backend development
+- **HTML** - Markup language for creating web pages
+- **CSS** - Style sheet language for styling web pages
+
+## Installation
+
+To install and set up the project locally:
+
+```sh
+git clone https://github.com/Billmico24/Team-DevBenders.git
+cd slim-mom-app
+npm install
+npm start
