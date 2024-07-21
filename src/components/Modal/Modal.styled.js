@@ -39,7 +39,44 @@ export const ModalWindow = styled.div`
     width: 672px;
     height: 572px;
   }
+    
+  body.nightmode & {
+  background-color: black;
+  }
 `;
+
+export const ModalWindowTeam = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 672px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 5px;
+  padding: 20px;
+
+  @media (max-width: 767px) {
+    top: 470px;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  @media (min-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 672px;
+    height: 650px;  /* Increase height */
+  }
+
+  body.nightmode & {
+    background: radial-gradient(ellipse at bottom, #456d98 0%, #090a0f 100%);
+  }
+`;
+
 
 export const ButtonClose = styled(MdClose)`
   cursor: pointer;
