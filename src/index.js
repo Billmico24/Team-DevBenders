@@ -14,8 +14,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <ThemeContextProvider>
-        <PersistGate loading={<div>Loading...</div>} persistor={persistor}>
-          <BrowserRouter basename={process.env.REACT_APP_BASENAME || '/'}>
+      <PersistGate loading={null} persistor={persistor}>
+      <BrowserRouter basename="/slim-mom-frontend-team-project">
             <App />
           </BrowserRouter>
         </PersistGate>
